@@ -1,0 +1,15 @@
+{
+  "name": "sudoku-solver",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Step-by-step Sudoku solver (TypeScript, no framework)",
+  "scripts": {
+    "typecheck": "tsc",
+    "build": "tsc && esbuild src/main.ts --bundle --target=es2020 --outfile=dist/app.js",
+    "watch": "esbuild src/main.ts --bundle --target=es2020 --outfile=dist/app.js --watch"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0",
+    "typescript": "^5.6.0"
+  }
+}
